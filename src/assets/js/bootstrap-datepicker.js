@@ -1812,6 +1812,10 @@
             if (date in dateAliases) {
                 date = dateAliases[date];
             }
+            // Added to take in account dates like dd/mm/yyyy hh:ii
+            if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(date)) {
+                format = this.parseFormat('dd/mm/yyyy', type);
+            }                                 
             if (/^[\-+]\d+[dmwy]([\s,]+[\-+]\d+[dmwy])*$/i.test(date)) {
                 parts = date.match(/([\-+]\d+)([dmwy])/gi);
                 date = new Date();
