@@ -32,6 +32,7 @@ The DatePicker widget is a Yii 2 wrapper for the [Bootstrap DatePicker plugin](h
 * Solo Button Markup
 
 > NOTE: This extension is a sub repo split of [yii2-widgets](https://github.com/kartik-v/yii2-widgets). The split has been done since 08-Nov-2014 to allow developers to install this specific widget in isolation if needed. One can also use the extension the previous way with the whole suite of [yii2-widgets](http://demos.krajee.com/widgets).
+> This extension is a modified version of kartik to take in account italian date formats (dd/mm/yyyy).
 
 ## Installation
 
