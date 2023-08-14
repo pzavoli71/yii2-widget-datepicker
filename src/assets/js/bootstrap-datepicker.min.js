@@ -1814,7 +1814,7 @@
             }
             // Added to take in account dates like dd/mm/yyyy hh:ii
             if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(date)) {
-                format = this.parseFormat('dd/mm/yyyy', type);
+                format = this.parseFormat('dd/mm/yyyy');
             }                                 
             if (/^[\-+]\d+[dmwy]([\s,]+[\-+]\d+[dmwy])*$/i.test(date)) {
                 parts = date.match(/([\-+]\d+)([dmwy])/gi);
