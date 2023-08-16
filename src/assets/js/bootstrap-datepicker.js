@@ -1474,6 +1474,7 @@
                         if (this.o.autoclose)
                             this.hide();
                     }
+                    dateChanged = true;
                     break;
                 case 9: // tab
                     this.focusDate = null;
